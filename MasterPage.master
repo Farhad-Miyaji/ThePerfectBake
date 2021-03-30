@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>The Perfect Bake</title>
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    
+    <%--Carousel CSS--%>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <link href="css/carousel.css" rel="stylesheet" type="text/css" />
+    <%--Carousel CSS--%>
+    <%--Font Awesome Icons--%>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/6939e21315.js" crossorigin="anonymous"></script>
+    <%--Font Awesome Icons--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <%--TOP HEADER STARTS--%>
+        <div class="container-fluid top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="tel:+919725414376" class="left"><i class="fa fa-phone"></i>&nbsp;+91 97254
+                            14376</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 right">
+                        <a href="https://www.instagram.com/theperfectbake_/?hl=en" class="right"><i class="fa fa-instagram">
+                        </i>&nbsp;theperfectbake_</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%--TOP HEADER ENDS--%>
+        <%--LOGO AND MENU STARTS--%>
+        <div class="container-fluid newheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-4 col-md-8">
+                        <a>
+                            <img src="images/logo.png" alt="The Perfect Bake" /></a>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-4">
+                        <div id='cssmenu'>
+                            <div id="head-mobile">
+                            </div>
+                            <div class="button">
+                            </div>
+                            <ul>
+                                <li><a href="Default.aspx">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Bakes&nbsp;<i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="#">Brownies</a> </li>
+                                        <li><a href="#">Cookies</a> </li>
+                                        <li><a href="#">Tres Leches</a> </li>
+                                        <li><a href="#">Blondies</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact Us</a></li>
+                                <%--<li><a href="#">Properties</a>
+                                
+                            </li>--%>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%--LOGO AND MENU ENDS--%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/stickyheader.js" type="text/javascript"></script>
+    <%--Carousel JS--%>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script>
+    <script src="js/carousel.js" type="text/javascript"></script>
+    <%--Carousel JS--%>
+    </form>
+</body>
+</html>
